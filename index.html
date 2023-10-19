@@ -14,7 +14,11 @@
 			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
 			rel="stylesheet"
 		/>
-		<script src="./app.js" defer></script>
+
+		<script src="./scripts/config.js" defer></script>
+		<script src="./scripts/game.js"></script>
+		<script src="./scripts/app.js" defer></script>
+
 		<title>Tic Tac Toe</title>
 	</head>
 	<body>
@@ -33,7 +37,9 @@
 						<input type="text" name="username" id="playername" />
 					</div>
 					<div>
-						<button type="button" class="btn btn-alt">Cancel</button>
+						<button type="button" class="btn btn-alt" id="cancel-config-btn">
+							Cancel
+						</button>
 						<button type="submit" class="btn">Confirm</button>
 					</div>
 				</form>
@@ -45,7 +51,7 @@
 							<h2>Player 1</h2>
 							<h3>PLAYER NAME</h3>
 							<p class="player-symbol">X</p>
-							<button class="btn btn-alt">Edit</button>
+							<button class="btn btn-alt" id="edit-player-1-btn">Edit</button>
 						</article>
 					</li>
 					<li>
@@ -53,7 +59,7 @@
 							<h2>Player</h2>
 							<h3>PLAYER NAME</h3>
 							<p class="player-symbol">O</p>
-							<button class="btn btn-alt">Edit</button>
+							<button class="btn btn-alt" id="edit-player-2-btn">Edit</button>
 						</article>
 					</li>
 				</ol>
